@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --cardinal: #bb2337;
+  --golden-glow: #ffe087;
+  --raw-umber: #735c00;
+  --white: #ffffff;
+}
+
+html {
+  height: 100%;
+
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+
+  font-family: var(--font-family);
+
+  background-color: var(--golden-glow);
+  background-image: linear-gradient(transparent 50%, var(--golden-glow)), url("../assets/svg/pattern.svg");
+  background-size: 50px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.button {
+  width: 148px;
+  min-height: 80px;
+  padding: 24px;
+
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ececec;
+  border-radius: 80px;
+  box-shadow: 0 1px 3px 1px rgba(115, 92, 0, 0.2), 0 1px 2px 0 rgba(115, 92, 0, 0.3);
+  cursor: pointer;
+}
+
+.button-x {
+  background-image: url("../assets/svg/x.svg");
+}
+
+.button-o {
+  background-image: url("../assets/svg/o.svg");
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__sign {
+  padding: 15px 20px 10px;
+
+  background-color: var(--raw-umber);
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.header__title {
+  margin: 0;
+
+  font-size: 30px;
+  color: var(--white);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+
+  column-gap: 3px;
+}
+
+.footer__icon {
+  color: var(--raw-umber);
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: var(--raw-umber);
+}
+
+.footer__github-link {
+  font-weight: 600;
+  color: var(--raw-umber);
+}
+
+.footer__github-link:hover {
+  color: var(--cardinal);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  row-gap: 20px;
+}
+
+.intro__sign {
+  font-size: 24px;
+  color: var(--raw-umber);
+}
+
+.intro__buttons {
+  display: flex;
+
+  column-gap: 15px;
+}
