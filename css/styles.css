@@ -35,6 +35,10 @@ body {
   background-size: 50px;
 }
 
+body.is-playing {
+  background: none;
+}
+
 main {
   display: flex;
   flex-grow: 1;
@@ -123,6 +127,10 @@ img {
   color: var(--cardinal);
 }
 
+.is-playing .intro {
+  display: none;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -141,4 +149,61 @@ img {
   display: flex;
 
   column-gap: 15px;
+}
+
+.game {
+  display: none;
+}
+
+.is-playing .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+  row-gap: 35px;
+}
+
+.field {
+  display: grid;
+
+  grid-template-columns: repeat(3, 115px);
+  grid-template-rows: repeat(3, 115px);
+}
+
+.field__cell {
+  width: 120px;
+  height: 120px;
+
+  background-image: url("../assets/img/empty-cell.png");
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+
+  font-size: 24px;
+  color: var(--raw-umber);
+  column-gap: 10px;
+}
+
+.player {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.player-x {
+  background-image: url("../assets/svg/x.svg");
+}
+
+.player-o {
+  background-image: url("../assets/svg/o.svg");
 }
