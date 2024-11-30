@@ -15,7 +15,7 @@
     </header>
     <main class="main-page">
       <div class="intro">
-        <img class="intro__img" width="400" height="400" src="./assets/img/intro-image.png" alt="The playing field of tic tac toe.">
+        <img class="intro__img" width="400" height="400" src="./assets/img/game-field.png" alt="The playing field of tic tac toe.">
         <span class="intro__sign">Who is playing first?</span>
         <div class="intro__buttons">
           <button class="button button-x" type="button" aria-label="X"></button>
@@ -45,5 +45,30 @@
         <span class="footer__copyright">Coded by <a class="footer__github-link" aria-label="GitHub profile." href="https://github.com/heligie" target="_blank" rel="nofollow noopener">heligie</a></span>
       </div>
     </footer>
+
+    <div class="modal modal-win">
+      <div class="modal__overlay"></div>
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <img class="modal__img" width="180" height="180" src="./assets/img/win-image.png" alt="Winner's Cup.">
+          <span class="modal__subtitle subtitle">Player <span class="modal-player player player-o"></span> won</span>
+          <p class="modal__description">Congrats on being the undisputed champion of pressing buttons like a pro.</p>
+          <button class="modal__button restart-button" type="button">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-draw">
+      <div class="modal__overlay"></div>
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <img class="modal__img" width="180" height="180" src="./assets/img/game-field.png" alt="Tic tac toe game field.">
+          <span class="modal__subtitle subtitle">It’s a Draw!</span>
+          <p class="modal__description">Congrats to both of you for equally excelling in the art of not winning.</p>
+          <button class="modal__button replay-button" type="button">Replay</button>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
